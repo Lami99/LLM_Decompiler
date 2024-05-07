@@ -46,7 +46,7 @@ def process_files(base_path):
                         print(f"Modified file: {file_path}")
 
 # Directory relative path
-base_directory_path = "Dataset/juliet-test-suite-c-master/testcases"
+base_directory_path = "../Dataset/juliet-test-suite-c-master/testcases"
 
 # List of CWE numbers to keep
 cwe_numbers_to_keep = ["78", "122", "134", "197", "242", "367", "391", "401", "415", "416", "457", "467", "468", "476", "478", "480", "482", "561", "562", "563", "590", "835"]
