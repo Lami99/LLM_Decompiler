@@ -22,9 +22,9 @@ To adapt the process_juliet_suite.py script to specific needs, you can modify th
 
   This script is designed to facilitate extracting a small number of test cases from the Juliet Test Suite. It randomly selects 'bad' files (which contain vulnerabilities) and their 'good' counterparts (which are corrected versions without vulnerabilities) from each CWE-specific directory that includes separate subdirectories for 'bad' and 'good' binaries. The samples will be saved under ../selected_binaries , which could be used as input to analyze_all.sh
 
-    Customization Options
+Customization Options
 
-    To tailor the script for specific testing requirements, consider the following adjustments:
+To tailor the script for specific testing requirements, consider the following adjustments:
 
     Number of Samples (num_files): Adjust this parameter to change the number of 'bad/good' file pairs selected, allowing control over the scale of testing.
 
