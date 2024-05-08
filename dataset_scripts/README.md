@@ -3,8 +3,8 @@ Functionality
 
 The process_juliet_suite.py script is designed to streamline the preparation of the Juliet Test Suite for C/C++ by performing two primary functions:
 
-    Directory Filtering: The script filters out directories that are not related to specific Common Weakness Enumeration (CWE) numbers. This is particularly useful for focusing on relevant security weaknesses when working with large datasets.
-    Code Standardization: It processes the C/C++ source files within the retained directories, replacing predefined strings to standardize certain text. This adjustment typically aims to obscure whether a particular function call in the source code is 'good' or 'bad', which can be important for blind testing and evaluation.
+  Directory Filtering: The script filters out directories that are not related to specific Common Weakness Enumeration (CWE) numbers. This is particularly useful for focusing on relevant security weaknesses when working with large datasets.
+  Code Standardization: It processes the C/C++ source files within the retained directories, replacing predefined strings to standardize certain text. This adjustment typically aims to obscure whether a particular function call in the source code is 'good' or 'bad', which can be important for blind testing and evaluation.
 
 Customizable Components
 
@@ -13,6 +13,7 @@ To adapt the process_juliet_suite.py script to specific needs, you can modify th
     CWE Numbers (cwe_numbers_to_keep)
         This is a list of strings where each string represents the CWE number that you want to keep in the Juliet Test Suite.
         By modifying this list, you can tailor the dataset to include only the directories associated with the CWE numbers that are relevant to your specific security analysis or research focus.
+        
         Example change:
 
         python
