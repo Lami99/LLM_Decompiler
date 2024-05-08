@@ -2,7 +2,7 @@
 Setup Guide
 
     Download Ghidra:
-        Visit the Ghidra release page and download the zip file named ghidra_release_PUBLIC_refNumber.zip from the assets of the selected release.
+        Visit the Ghidra release page https://github.com/NationalSecurityAgency/ghidra/releases and download the zip file named ghidra_release_PUBLIC_refNumber.zip from the assets of the selected release.
 
     Extract Ghidra:
         Unzip the downloaded file into the Decompiler directory ensuring that the contents are directly placed under this directory.
@@ -86,3 +86,5 @@ Usage and Script Descriptions
     Usage: To enhance decompiled code, provide the filename of the decompiled code:
 
     python llm_r.py decompiled_code_file
+
+Other usefull scripts are under helper_scripts directory, that can be usefull for batch analysis 
