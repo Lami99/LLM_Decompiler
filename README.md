@@ -11,6 +11,7 @@ Motivated by existing research on the effectiveness of LLMs in analyzing source 
 The experiment involved scanning code in two phases:
 
 -Direct analysis of decompiled outputs.
+
 -Analysis of source code post-enhancement and reconstruction, aimed at addressing typical decompilation flaws.
 
 This process was informed by previous methodologies that sought to improve the accuracy of static analyzers by refining decompiled output before analysis.
