@@ -27,10 +27,10 @@ Capabilities:
 
 <ins> **The command-line tool offers several functionalities** </ins>
 
-    Code Recovery: Transforms binary files into enhanced, high-quality decompiled code in the user's preferred programming language, closely approximating the original source code's structure and logic.
-    Vulnerability Reporting: Generates detailed reports identifying potential security weaknesses in the original binary.
-    Exploit Script Generation: Provides skeleton scripts that can serve as a basis or inspiration for crafting proof-of-concept exploits for identified bugs.
-    Handling Long Code Bases: Efficiently processes extensive code bases, making it suitable for comprehensive software projects.
+-Code Recovery: Transforms binary files into enhanced, high-quality decompiled code in the user's preferred programming language, closely approximating the original source code's structure and logic.
+-Vulnerability Reporting: Generates detailed reports identifying potential security weaknesses in the original binary.
+-Exploit Script Generation: Provides skeleton scripts that can serve as a basis or inspiration for crafting proof-of-concept exploits for identified bugs.
+-Handling Long Code Bases: Efficiently processes extensive code bases, making it suitable for comprehensive software projects.
 
 <ins> **Setup Guide ** </ins>
 1. Decompiler setup
