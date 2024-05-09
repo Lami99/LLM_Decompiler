@@ -1,9 +1,10 @@
 import os
 import sys
 from openai import OpenAI
+from dotenv import load_dotenv
 
-# Setup OpenAI API client
-OPENAI_API_KEY = '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'
+load_dotenv()
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 def filter_source_code(file_path):

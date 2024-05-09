@@ -1,6 +1,7 @@
 import os
 import sys
 from openai import OpenAI
+from dotenv import load_dotenv
 
 # Check if the script was run with a filename argument
 if len(sys.argv) < 2:
@@ -9,8 +10,8 @@ if len(sys.argv) < 2:
 
 filename = sys.argv[1]
 
-# Replace the placeholder with your actual OpenAI API key
-OPENAI_API_KEY = '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'
+load_dotenv()
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Construct the output file name

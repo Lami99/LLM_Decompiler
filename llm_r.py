@@ -1,6 +1,7 @@
 import os
 import sys
 from openai import OpenAI
+from dotenv import load_dotenv
 
 if len(sys.argv) < 2:
     print("Usage: llm_r.py <decompiled_code_file>")
@@ -8,8 +9,8 @@ if len(sys.argv) < 2:
 
 input_filename = sys.argv[1]
 
-# Replace the placeholder with your actual OpenAI API key
-OPENAI_API_KEY = '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'
+load_dotenv()
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 output_filename = f"{os.path.splitext(input_filename)[0]}_enhanced.c"
