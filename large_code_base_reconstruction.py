@@ -50,7 +50,6 @@ def send_to_gpt_and_parse(function_data, name_map):
             messages=[{"role": "system", "content": prompt}]
         )
         output_text = response.choices[0].message.content
-        print(output_text)
         
         # Parsing the expected structured output
         lines = output_text.split('\n')
@@ -84,7 +83,6 @@ def process_json_file(file_path):
     for function_data in functions:
         enhanced_code = send_to_gpt_and_parse(function_data, name_map)
         enhanced_code_blocks.append(f"// Function: {function_data['name']}\n{function_data['signature']}\n{enhanced_code}\n")
-        print(name_map)
     # Save the enhanced functions to a new source code file
     output_filename = f"{os.path.splitext(file_path)[0]}_enhanced.c"
     with open(output_filename, "w") as output_file:

@@ -13,7 +13,7 @@ Setup Guide
     Update Ghidra Path:
         If using a Ghidra release different from 11.0.1, update the GHIDRA_PATH in the Decompiler/gd_decomp.sh script to match the version you have installed.
 
-2. Change the openai key with you own key 
+2. Change the openai key with you own key in the .env file
 3. Dataset setup(optional: only if you want reproduce or extend the experiement described above)
 
 
