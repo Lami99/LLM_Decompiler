@@ -10,16 +10,16 @@ Motivated by existing research on the effectiveness of LLMs in analyzing source 
 
 The experiment involved scanning code in two phases:
 
--Direct analysis of decompiled outputs.
+- Direct analysis of decompiled outputs.
 
--Analysis of source code post-enhancement and reconstruction, aimed at addressing typical decompilation flaws.
+- Analysis of source code post-enhancement and reconstruction, aimed at addressing typical decompilation flaws.
 
 This process was informed by previous methodologies that sought to improve the accuracy of static analyzers by refining decompiled output before analysis.
 
 <ins> **Preliminary Results** </ins>
 
--Enhanced decompiled binary analysis using LLMs outperformed traditional methods across all evaluated metrics.
--Tools based on LLM detection demonstrated higher efficacy in identifying existing bugs but incurred more false positives compared to conventional static analyzers.
+- Enhanced decompiled binary analysis using LLMs outperformed traditional methods across all evaluated metrics.
+- Tools based on LLM detection demonstrated higher efficacy in identifying existing bugs but incurred more false positives compared to conventional static analyzers.
 
 Conclusion:
 
@@ -28,10 +28,10 @@ Capabilities:
 
 <ins> **The command-line tool offers several functionalities** </ins>
 
--Code Recovery: Transforms binary files into enhanced, high-quality decompiled code in the user's preferred programming language, closely approximating the original source code's structure and logic.
--Vulnerability Reporting: Generates detailed reports identifying potential security weaknesses in the original binary.
--Exploit Script Generation: Provides skeleton scripts that can serve as a basis or inspiration for crafting proof-of-concept exploits for identified bugs.
--Handling Long Code Bases: Efficiently processes extensive code bases, making it suitable for comprehensive software projects.
+- Code Recovery: Transforms binary files into enhanced, high-quality decompiled code in the user's preferred programming language, closely approximating the original source code's structure and logic.
+- Vulnerability Reporting: Generates detailed reports identifying potential security weaknesses in the original binary.
+- Exploit Script Generation: Provides skeleton scripts that can serve as a basis or inspiration for crafting proof-of-concept exploits for identified bugs.
+- Handling Long Code Bases: Efficiently processes extensive code bases, making it suitable for comprehensive software projects.
 
 <ins> **Setup Guide ** </ins>
 1. Decompiler setup
