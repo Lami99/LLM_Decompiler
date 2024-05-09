@@ -1,4 +1,36 @@
-# LLM_Decompiler
+# Reverse Engineering AI Enhanced Tool (Decompilation/Reconstruction/Scanning automation)
+
+Description
+
+This tool is designed to streamline and automate the process of decompiling executables—particularly those with stripped binaries—using a command-line interface to eliminate the slowdowns associated with GUI-based decompilation. It harnesses the power of Language Model Systems (LLMs), such as GPT-4, to reconstruct, enhance, and analyze decompiled code. This capability is critical for detecting bugs and vulnerabilities within binaries and is broadly applicable to various reverse engineering tasks. LLMs have demonstrated effectiveness akin to static analyzers on source code, which prompted the exploration of their limitations and capabilities with compiled stripped code.
+
+Experiment Validating Hypothesis
+
+Motivated by existing research on the effectiveness of LLMs in analyzing source code, we sought to quantify the performance of the GPT-4 model on binary vulnerability analysis, drawing parallels to studies like those documented in "On the capability of static code analysis to detect security vulnerabilities", which examined static analyzers on the Juliet Test Suite. The Juliet Test Suite was chosen because it provides a comprehensive set of test cases specifically designed to benchmark the accuracy and effectiveness of vulnerability detection tools across a wide range of programming errors.
+
+The experiment involved scanning code in two phases:
+
+    Direct analysis of decompiled outputs.
+    Analysis of source code post-enhancement and reconstruction, aimed at addressing typical decompilation flaws.
+
+This process was informed by previous methodologies that sought to improve the accuracy of static analyzers by refining decompiled output before analysis.
+Preliminary Results:
+
+    Enhanced decompiled binary analysis using LLMs outperformed traditional methods across all evaluated metrics.
+    Tools based on LLM detection demonstrated higher efficacy in identifying existing bugs but incurred more false positives compared to conventional static analyzers.
+
+Conclusion:
+
+LLM-based tools show promise for integration into development stacks, particularly where the cost of false positives is manageable. Such tools can significantly aid developers, especially those at the entry level, by automating the enhancement of decompiled code and providing insightful vulnerability assessments.
+Capabilities:
+
+The command-line tool offers several functionalities:
+
+    Code Recovery: Transforms binary files into enhanced, high-quality decompiled code in the user's preferred programming language, closely approximating the original source code's structure and logic.
+    Vulnerability Reporting: Generates detailed reports identifying potential security weaknesses in the original binary.
+    Exploit Script Generation: Provides skeleton scripts that can serve as a basis or inspiration for crafting proof-of-concept exploits for identified bugs.
+    Handling Long Code Bases: Efficiently processes extensive code bases, making it suitable for comprehensive software projects.
+
 Setup Guide
 1. Decompiler setup
     Download Ghidra:
